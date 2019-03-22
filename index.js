@@ -324,6 +324,7 @@ class DatePicker extends Component {
       mode,
       style,
       customStyles,
+      maskStyle,
       disabled,
       minDate,
       maxDate,
@@ -371,7 +372,7 @@ class DatePicker extends Component {
               style={{flex: 1}}
             >
               <TouchableComponent
-                style={Style.datePickerMask}
+                style={[Style.datePickerMask, maskStyle]}
                 activeOpacity={1}
                 underlayColor={'#00000077'}
                 onPress={this.onPressMask}
